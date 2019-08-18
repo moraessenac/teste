@@ -5,6 +5,8 @@
  */
 package viewprod;
 
+import java.util.Locale;
+
 /**
  *
  * @author marcelopc
@@ -16,6 +18,7 @@ public class menuview extends javax.swing.JFrame {
      */
     public menuview() {
         initComponents();
+        setLocationRelativeTo(null);
         dispose();
     }
 
@@ -40,19 +43,24 @@ public class menuview extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         add.setBackground(new java.awt.Color(255, 255, 255));
-        add.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        add.setFont(new java.awt.Font("Segoe UI Light", 1, 11)); // NOI18N
         add.setIcon(new javax.swing.ImageIcon("C:\\Users\\marcelopc\\Documents\\testeimg\\teste.jpg")); // NOI18N
         add.setText("Adicionar");
         add.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        add.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addActionPerformed(evt);
+            }
+        });
 
         venda.setBackground(new java.awt.Color(255, 255, 255));
-        venda.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        venda.setFont(new java.awt.Font("Segoe UI Light", 1, 11)); // NOI18N
         venda.setIcon(new javax.swing.ImageIcon("C:\\Users\\marcelopc\\Documents\\testeimg\\venda.jpg")); // NOI18N
         venda.setText("Vendas");
         venda.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         sair.setBackground(new java.awt.Color(255, 255, 255));
-        sair.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        sair.setFont(new java.awt.Font("Segoe UI Light", 1, 11)); // NOI18N
         sair.setIcon(new javax.swing.ImageIcon("C:\\Users\\marcelopc\\Documents\\testeimg\\exit.jpg")); // NOI18N
         sair.setText("SAIR");
         sair.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -113,8 +121,15 @@ public class menuview extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sairActionPerformed
-        System.exit(0);        
+        System.exit(0);
     }//GEN-LAST:event_sairActionPerformed
+
+    private void addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addActionPerformed
+        prodview frameprod = new prodview();
+        frameprod.setLocationRelativeTo(null);
+        frameprod.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_addActionPerformed
 
     /**
      * @param args the command line arguments
@@ -147,7 +162,7 @@ public class menuview extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new menuview().setVisible(true);
-                
+
             }
         });
     }
