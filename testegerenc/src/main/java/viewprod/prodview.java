@@ -124,7 +124,7 @@ public class prodview extends javax.swing.JFrame {
                         .addComponent(digiprecovenda, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(digidescricao, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(90, Short.MAX_VALUE))
         );
         painelopcoesLayout.setVerticalGroup(
             painelopcoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -152,25 +152,25 @@ public class prodview extends javax.swing.JFrame {
 
         incluir.setBackground(new java.awt.Color(255, 255, 255));
         incluir.setFont(new java.awt.Font("Segoe UI Light", 1, 12)); // NOI18N
-        incluir.setIcon(new javax.swing.ImageIcon("C:\\Users\\marcelopc\\Documents\\testeimg\\incluir.jpg")); // NOI18N
+        incluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/incluir.jpg"))); // NOI18N
         incluir.setText("INCLUIR");
         incluir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         atualizar.setBackground(new java.awt.Color(255, 255, 255));
         atualizar.setFont(new java.awt.Font("Segoe UI Light", 1, 12)); // NOI18N
-        atualizar.setIcon(new javax.swing.ImageIcon("C:\\Users\\marcelopc\\Documents\\testeimg\\atualizar.jpg")); // NOI18N
+        atualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/atualizar.jpg"))); // NOI18N
         atualizar.setText("ATUALIZAR");
         atualizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         listar.setBackground(new java.awt.Color(255, 255, 255));
         listar.setFont(new java.awt.Font("Segoe UI Light", 1, 12)); // NOI18N
-        listar.setIcon(new javax.swing.ImageIcon("C:\\Users\\marcelopc\\Documents\\testeimg\\listar.jpg")); // NOI18N
+        listar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/listar.jpg"))); // NOI18N
         listar.setText("LISTAR");
         listar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         excluir.setBackground(new java.awt.Color(255, 255, 255));
         excluir.setFont(new java.awt.Font("Segoe UI Light", 1, 12)); // NOI18N
-        excluir.setIcon(new javax.swing.ImageIcon("C:\\Users\\marcelopc\\Documents\\testeimg\\excluir.jpg")); // NOI18N
+        excluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/excluir.jpg"))); // NOI18N
         excluir.setText("EXCLUIR");
         excluir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
@@ -186,7 +186,7 @@ public class prodview extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Segoe UI Light", 1, 12)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\marcelopc\\Documents\\testeimg\\cancel.jpg")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cancel.jpg"))); // NOI18N
         jButton1.setText("CANCELAR");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
@@ -211,10 +211,10 @@ public class prodview extends javax.swing.JFrame {
                         .addComponent(atualizar)
                         .addGap(40, 40, 40)
                         .addComponent(listar, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(40, 40, 40)
+                        .addGap(42, 42, 42)
                         .addComponent(excluir)
-                        .addGap(40, 40, 40)
-                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton1)
                         .addContainerGap())))
         );
         jPanel1Layout.setVerticalGroup(
@@ -228,12 +228,12 @@ public class prodview extends javax.swing.JFrame {
                 .addComponent(painelopcoes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(excluir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(incluir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(atualizar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(listar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jButton1)
+                    .addComponent(incluir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(atualizar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(listar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(excluir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(27, 27, 27))
         );
 
