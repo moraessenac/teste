@@ -28,6 +28,7 @@ public class prodview extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        condicoes = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         nometela = new javax.swing.JLabel();
         painelopcoes = new javax.swing.JPanel();
@@ -50,7 +51,9 @@ public class prodview extends javax.swing.JFrame {
         listar = new javax.swing.JButton();
         excluir = new javax.swing.JButton();
         voltar = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        cancel = new javax.swing.JButton();
+        habilitado = new javax.swing.JRadioButton();
+        desabilitado = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -184,11 +187,17 @@ public class prodview extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setFont(new java.awt.Font("Segoe UI Light", 1, 12)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cancel.jpg"))); // NOI18N
-        jButton1.setText("CANCELAR");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        cancel.setBackground(new java.awt.Color(255, 255, 255));
+        cancel.setFont(new java.awt.Font("Segoe UI Light", 1, 12)); // NOI18N
+        cancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cancel.jpg"))); // NOI18N
+        cancel.setText("CANCELAR");
+        cancel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        condicoes.add(habilitado);
+        habilitado.setText("HABILITADO");
+
+        condicoes.add(desabilitado);
+        desabilitado.setText("DESABILITADO");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -214,8 +223,14 @@ public class prodview extends javax.swing.JFrame {
                         .addGap(42, 42, 42)
                         .addComponent(excluir)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1)
+                        .addComponent(cancel)
                         .addContainerGap())))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(habilitado)
+                .addGap(18, 18, 18)
+                .addComponent(desabilitado)
+                .addGap(122, 122, 122))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -226,9 +241,13 @@ public class prodview extends javax.swing.JFrame {
                     .addComponent(voltar))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(painelopcoes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
+                .addGap(32, 32, 32)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(habilitado)
+                    .addComponent(desabilitado))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1)
+                    .addComponent(cancel)
                     .addComponent(incluir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(atualizar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -298,8 +317,11 @@ public class prodview extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton atualizar;
+    private javax.swing.JButton cancel;
     private javax.swing.JLabel codigo;
+    private javax.swing.ButtonGroup condicoes;
     private javax.swing.JLabel data;
+    private javax.swing.JRadioButton desabilitado;
     private javax.swing.JLabel descricao;
     private javax.swing.JTextField digiID;
     private javax.swing.JTextField digidata;
@@ -309,8 +331,8 @@ public class prodview extends javax.swing.JFrame {
     private javax.swing.JTextField digiproduto;
     private javax.swing.JTextField digiquantidade;
     private javax.swing.JButton excluir;
+    private javax.swing.JRadioButton habilitado;
     private javax.swing.JButton incluir;
-    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton listar;
     private javax.swing.JLabel nometela;
